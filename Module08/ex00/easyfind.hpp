@@ -1,37 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   whatever.hpp                                       :+:      :+:    :+:   */
+/*   easyFind.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/01 18:00:58 by abouazi           #+#    #+#             */
-/*   Updated: 2023/10/08 00:47:38 by abouazi          ###   ########.fr       */
+/*   Created: 2023/10/10 16:01:23 by abouazi           #+#    #+#             */
+/*   Updated: 2023/10/10 17:00:33 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-# ifndef WHATEVER_HPP
-# define WHATEVER_HPP
-
 #include <iostream>
+#include <vector>
+#include <algorithm>
 
+template <typename T>
+void	easyfind(T first, int second) {
+	int i;
 
-template <typename t>
-void	swap(t	&t1, t	&t2){
-	t	tmp = t1;
-	t1 = t2;
-	t2 = tmp;
+	// std::vector<int>::iterator it = first
+	i = 0;
+	find(it.begin(), (it.end() - 1), second);
+	// while (1) {
+	// 	i++;
+	// }
+	std::cout << "the first occurence is: " << i <<" which is " <<  first.at(i) << std::endl;;
 }
-
-template <typename t>
-t	min(t	t1, t	t2){
-	return (t1 < t2 ? t1 : t2);
-}
-
-template <typename t>
-t	max(t	t1, t	t2){
-	return (t1 > t2 ? t1 : t2);
-}
-
-# endif

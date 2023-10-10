@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/abouazi/Desktop/CPlusPlus'
+make: Leaving directory `/Users/abouazi/Desktop/CPlusPlus'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
