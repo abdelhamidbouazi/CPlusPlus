@@ -9,9 +9,8 @@
 class BitcoinExchange
 {
 	private:
-		/* data */
 	public:
-		BitcoinExchange(/* args */);
+		BitcoinExchange();
 		BitcoinExchange(const BitcoinExchange &cp);
 		BitcoinExchange& operator=(const BitcoinExchange &cp);
 		~BitcoinExchange();
