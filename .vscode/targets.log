@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Sun Oct  8 03:52:28 2023
+
+# Make data base, printed on Thu Oct 12 15:41:50 2023
 
 # Variables
 
@@ -24,23 +27,26 @@ VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/abouazi/Desktop/CPlusPlus
+CURDIR := /Users/abdelhamidbouazi/Desktop/CPlusPlus
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en","availableLanguages":{},"_languagePackSupport":true}
+ 
+VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile
 MAKEFILE_LIST := 
 # environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
 VSCODE_CWD = /
 # environment
-PATH = /Users/abouazi/.docker/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Apple/usr/bin
+PATH = /Library/Frameworks/Python.framework/Versions/3.11/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-LaunchInstanceID = 741A181E-0897-44EC-8A93-CD778E730C30
+LaunchInstanceID = EBA6C484-7453-43CF-9082-C04FD4279139
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
@@ -48,27 +54,29 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 LS_COLORS = di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Fg9PyuGWD9/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.btaKratTCT/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/abouazi/Desktop/CPlusPlus
+PWD = /Users/abdelhamidbouazi/Desktop/CPlusPlus
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
+MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man:
+# environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /Users/abouazi
+HOME = /Users/abdelhamidbouazi
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/abouazi/Library/Application Support/Code/CachedData/fdb98833154679dbaa7af67a5a29fe19e55c2b73
+VSCODE_CODE_CACHE_PATH = /Users/abdelhamidbouazi/Library/Application Support/Code/CachedData/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d
 # environment
-LOGNAME = abouazi
+LOGNAME = abdelhamidbouazi
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
-ZSH = /Users/abouazi/.oh-my-zsh
+ZSH = /Users/abdelhamidbouazi/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -84,7 +92,7 @@ SHLVL = 1
 # default
 MAKE_VERSION := 3.81
 # environment
-USER = abouazi
+USER = abdelhamidbouazi
 # makefile
 .DEFAULT_GOAL := 
 # environment
@@ -96,11 +104,11 @@ MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # default
 .VARIABLES := 
 # environment
-TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n000cdph0033dm/T/
+TMPDIR = /var/folders/9z/zv1pvdld43l0ny5tsq3sg0740000gp/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/abouazi/Library/Application Support/Code/1.82-main.sock
+VSCODE_IPC_HOOK = /Users/abdelhamidbouazi/Library/Application Support/Code/1.82-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -110,15 +118,13 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000001.Electron
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.3637603.3637611
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# environment
-VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 +F = $(notdir $+)
 # environment
-__CF_USER_TEXT_ENCODING = 0x18DB4:0x0:0x0
+__CF_USER_TEXT_ENCODING = 0x1F6:0x0:0x0
 # environment
 COMMAND_MODE = unix2003
 # default
@@ -130,7 +136,7 @@ PAGER = less
 # environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186a6
+SECURITYSESSIONID = 186b0
 # automatic
 ^F = $(notdir $^)
 # default
@@ -142,9 +148,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 45038
+VSCODE_PID = 593
 # variable set hash-table stats:
-# Load=66/1024=6%, Rehash=0, Collisions=1/87=1%
+# Load=67/1024=7%, Rehash=0, Collisions=1/88=1%
 
 # Pattern-specific Variable Values
 
@@ -152,9 +158,9 @@ VSCODE_PID = 45038
 
 # Directories
 
-# . (device 16777228, inode 930410): 15 files, no impossibilities.
+# . (device 16777229, inode 3741208): 19 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 19 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -226,8 +232,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sun Oct  8 03:52:28 2023
+# Finished Make data base on Thu Oct 12 15:41:50 2023
 
  
-make: *** No rule to make target `all'.  Stop.
-
