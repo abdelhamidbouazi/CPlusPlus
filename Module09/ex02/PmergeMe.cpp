@@ -45,7 +45,7 @@ void PmergeMe::SortV( std::vector<int> &Vec)
 
 	if(Vec.size() <= 2)
 	{
-
+		
 		return ;
 	}
 	size_t size;
@@ -84,6 +84,7 @@ void PmergeMe::SortV( std::vector<int> &Vec)
 	{
 		it = std::upper_bound(_v.begin(), _v.end(), u);
 		_v.insert(it, u);
+		u = -1;
 	}
 	Vec  = _v;
 }
