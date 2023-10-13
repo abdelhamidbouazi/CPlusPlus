@@ -30,8 +30,7 @@ void PmergeMe::execute(char **av)
 	std::cout << std::endl;
 	std::cout << "After: ";
 	SortV(this->V);
-
-	for(size_t i = 0; i < V.size() - 1 ; i++)
+	for(size_t i = 0; i < V.size() ; i++)
 	{
 		std::cout << V[i] << " " ;
 	}
@@ -39,13 +38,13 @@ void PmergeMe::execute(char **av)
 
 void PmergeMe::SortV( std::vector<int> &Vec)
 {
-	std::map<int, int>	_m;
-	std::vector<int>		_v;
+	std::multimap<int, int>	_m;
+	std::vector<int>	_v;
 	int u = -1;
 
-	if(Vec.size() <= 2)
+	if(Vec.size() <= 3)
 	{
-		
+		std::sort(Vec.begin(), Vec.end());
 		return ;
 	}
 	size_t size;
@@ -57,7 +56,7 @@ void PmergeMe::SortV( std::vector<int> &Vec)
 		u = Vec[size];
 	}
 
-	for(size_t i = 0; i < size - 1; i++)
+	for(size_t i = 0; i < size - 1; i+=2)
 	{
 		if(Vec[i] > Vec[i + 1])
 		{
@@ -69,22 +68,23 @@ void PmergeMe::SortV( std::vector<int> &Vec)
 			_v.push_back(Vec[i+ 1]);
 			_m[Vec[i+1]] = Vec[i];
 		}
+
 	}
 
 	SortV(_v);
-	std::vector<int>::iterator it;
+	Vec.clear();
+	Vec.assign(_v.begin(), _v.end());
+	// std::vector<int>::iterator it;
 	for(size_t i = 0; i < _v.size(); i++)
 	{
-		it = std::upper_bound(_v.begin(), _v.begin() + i, _m[_v[i]]);
-		_v.insert(it, _m[_v[i++]]);
-		// std::cout << _m[_v[i++]];
+		std::vector<int>::iterator  it = std::upper_bound(Vec.begin(), (Vec.begin() + 2 * i), _m[_v[i]]);
+		Vec.insert(it, _m[_v[i]]);
 	}
 
 	if(u != -1)
 	{
-		it = std::upper_bound(_v.begin(), _v.end(), u);
-		_v.insert(it, u);
-		u = -1;
+		std::vector<int>::iterator  it = std::upper_bound(Vec.begin(), Vec.end(), u);
+		Vec.insert(it, u);
 	}
-	Vec  = _v;
 }
+
