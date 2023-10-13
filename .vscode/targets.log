@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Thu Oct 12 22:23:32 2023
+# Make data base, printed on Fri Oct 13 19:25:18 2023
 
 # Variables
 
@@ -43,7 +43,7 @@ PATH = /Users/abouazi/.docker/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-LaunchInstanceID = FA135245-1D62-4C2A-B886-1C2455AD01C3
+LaunchInstanceID = 3290A1E7-3431-41D7-ACFF-1C34E28A69DE
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
@@ -51,7 +51,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 LS_COLORS = di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.GKATndySz2/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.xE1LBGZOgl/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -116,8 +116,6 @@ MFLAGS = -Rrqp
 XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000004.Electron
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# environment
-VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -145,10 +143,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 44525
+VSCODE_PID = 68553
 # variable set hash-table stats:
- 
-# Load=66/1024=6%, Rehash=0, Collisions=1/87=1%
+# Load=65/1024=6%, Rehash=0, Collisions=1/86=1%
 
 # Pattern-specific Variable Values
 
@@ -230,6 +227,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Thu Oct 12 22:23:32 2023
+# Finished Make data base on Fri Oct 13 19:25:18 2023
 
  

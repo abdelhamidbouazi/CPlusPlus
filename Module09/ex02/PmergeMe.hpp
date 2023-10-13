@@ -17,7 +17,9 @@ class PmergeMe
 		PmergeMe();
 		void	execute(char **av);
 		void	SortV( std::vector<int> &Vec);
-		void	SortD();
+		void	SortD(std::vector<int> &Vec);
+		// void	SortD(std::vector<int> &Vec);
+		void	MergeD(std::deque<int> Deq);
 		~PmergeMe();
 };
 
