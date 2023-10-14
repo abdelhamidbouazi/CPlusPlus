@@ -1,41 +1,5 @@
 #include "BitcoinExchange.hpp"
 
-int tokenizer(std::string line, BitcoinExchange	&btc)
-{
-	char *s = new char[line.size() + 1];
-	strcpy(s, line.c_str());
-	char *tok = strtok(s, " |");
-	if (!tok)
-	{
-		std::cerr << "Error: bad input => " << line << std::endl;
-		delete[] s;
-		return 1;
-	}
-	std::string date = tok;
-	tok = strtok(NULL, " |");
-	if (!tok)
-	{
-		std::cerr << "Error: bad input => " << line << std::endl;
-		delete[] s;
-		return 2;
-	}
-	if (!checkKey(date))
-	{
-		std::cerr << "Error: invalid date => " << line << std::endl;
-		delete[] s;
-		return 3;
-	}
-	if (!checkValue(tok))
-	{
-		delete[] s;
-		return 4;
-	}
-	float num = std::atof(tok);
-	btc.Display(date, num);
-	delete[] s;
-	return 0;
-}
-
 int main(int ac, char **av)
 {
 	if (ac != 2)

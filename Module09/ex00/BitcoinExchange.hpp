@@ -21,8 +21,9 @@ class BitcoinExchange
 		int checkDB();
 		void Display(std::string d, float val);
 };
-bool checkYMD(std::string _y, std::string _m, std::string _d);
-bool checkKey(std::string date);
-bool checkValue(const std::string &value);
+bool	checkYMD(std::string _y, std::string _m, std::string _d);
+bool	checkKey(std::string date);
+bool	checkValue(const std::string &value);
+int		tokenizer(std::string line, BitcoinExchange	&btc);
 
 # endif
