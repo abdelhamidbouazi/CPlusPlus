@@ -6,6 +6,8 @@
 #include <deque>
 #include <algorithm>
 #include <map>
+#include <ctime>
+#include <iomanip>
 
 class PmergeMe
 {
@@ -16,10 +18,9 @@ class PmergeMe
 		// PmergeMe(char **av);
 		PmergeMe();
 		void	execute(char **av);
-		void	SortV( std::vector<int> &Vec);
-		void	SortD(std::vector<int> &Vec);
-		// void	SortD(std::vector<int> &Vec);
-		void	MergeD(std::deque<int> Deq);
+		void	SortV(std::vector<int> &Vec);
+		void	SortD(std::deque<int> &Deq);
+
 		~PmergeMe();
 };
 
