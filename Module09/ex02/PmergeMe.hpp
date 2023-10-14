@@ -12,10 +12,9 @@
 class PmergeMe
 {
 	private:
-		std::vector<int> V;
-		std::deque<int> D;
+		std::vector<int>	V;
+		std::deque<int>		D;
 	public:
-		// PmergeMe(char **av);
 		PmergeMe();
 		void	execute(char **av);
 		void	SortV(std::vector<int> &Vec);
