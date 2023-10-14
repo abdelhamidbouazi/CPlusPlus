@@ -1,6 +1,6 @@
 #include "PmergeMe.hpp"
 
-PmergeMe::PmergeMe(/* args */)
+PmergeMe::PmergeMe()
 {
 }
 
@@ -20,7 +20,6 @@ void PmergeMe::execute(char **av)
 			this->V.push_back(std::atoi(av[i]));
 			this->D.push_back(std::atoi(av[i]));
 		}
-		// std::cout << D.back() << std::endl;
 		i++;
 	}
 	std::cout << "Before: ";
@@ -74,14 +73,11 @@ void PmergeMe::SortV( std::vector<int> &Vec)
 		{
 			_v.push_back(Vec[i]);
 			_m.insert(std::pair<int,int>(Vec[i], Vec[i+1]));
-			// _m[Vec[i]] = Vec[i+1];
 		}
 		else
 		{
 			_v.push_back(Vec[i+ 1]);
 			_m.insert(std::pair<int,int>(Vec[i + 1], Vec[i]));
-
-			// _m[Vec[i+1]] = Vec[i];
 		}
 
 	}
@@ -131,14 +127,11 @@ void PmergeMe::SortD( std::deque<int> &Deq)
 		{
 			_d.push_back(Deq[i]);
 			_m.insert(std::pair<int,int>(Deq[i], Deq[i+1]));
-			// _m[Deq[i]] = Deq[i+1];
 		}
 		else
 		{
 			_d.push_back(Deq[i+ 1]);
 			_m.insert(std::pair<int,int>(Deq[i + 1], Deq[i]));
-
-			// _m[Deq[i+1]] = Deq[i];
 		}
 
 	}
