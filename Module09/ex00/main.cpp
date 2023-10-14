@@ -10,9 +10,8 @@ int main(int ac, char **av)
 	try
 	{
 		BitcoinExchange btc;
-		if (btc.checkDB()) // send the data,csv file here
+		if (btc.FillDatabase())
 			return 0;
-		// checkInputFile(av[1]);
 		std::ifstream file(av[1]);
 
 		if (!file.is_open())
@@ -20,11 +19,8 @@ int main(int ac, char **av)
 			std::cerr << "Error: could not open file.\n";
 			return 1;
 		}
-
 		int lineCount = 0;
 		std::string line;
-		// std::string date, value;
-
 		while (std::getline(file, line))
 		{
 			if (lineCount++ == 0 && line == "date | value")

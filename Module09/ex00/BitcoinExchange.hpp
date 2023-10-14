@@ -18,7 +18,7 @@ class BitcoinExchange
 		BitcoinExchange& operator=(const BitcoinExchange &cp);
 		~BitcoinExchange();
 
-		int checkDB();
+		int FillDatabase();
 		void Display(std::string d, float val);
 };
 bool	checkYMD(std::string _y, std::string _m, std::string _d);

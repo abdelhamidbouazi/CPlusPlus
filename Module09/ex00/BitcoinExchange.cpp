@@ -18,7 +18,7 @@ BitcoinExchange &BitcoinExchange::operator=(const BitcoinExchange &cp)
 	return *this;
 }
 
-int BitcoinExchange::checkDB()
+int BitcoinExchange::FillDatabase()
 {
 	std::ifstream dataFile("data.csv");
 	std::string dataLine;
