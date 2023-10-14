@@ -9,8 +9,8 @@ int main(int ac, char **av)
 	}
 	try
 	{
-		BitcoinExchange btc;
-		if (btc.FillDatabase())
+		BitcoinExchange b;
+		if (b.FillDatabase())
 			return 0;
 		std::ifstream file(av[1]);
 
@@ -33,7 +33,7 @@ int main(int ac, char **av)
 				std::cerr << "Error: bad input => " << line << "\n";
 				continue;
 			}
-			if (tokenizer(line, btc) != 0)
+			if (tokenizer(line, b) != 0)
 				continue ;
 		}
 	}

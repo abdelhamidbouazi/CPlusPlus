@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Sat Oct 14 01:08:56 2023
+# Make data base, printed on Sat Oct 14 03:53:12 2023
 
 # Variables
 
@@ -27,7 +27,6 @@ VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 @F = $(notdir $@)
 # makefile
- 
 CURDIR := /Users/abdelhamidbouazi/Desktop/CPlusPlus
 # makefile
 SHELL = /bin/sh
@@ -121,6 +120,8 @@ MFLAGS = -Rrqp
 XPC_SERVICE_NAME = application.com.microsoft.VSCode.3637603.3637611
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -135,11 +136,11 @@ MAKEFILES :=
 PAGER = less
 # environment
 LC_ALL = C
+ 
 # environment
 SECURITYSESSIONID = 186b0
 # automatic
 ^F = $(notdir $^)
- 
 # default
 SUFFIXES := 
 # default
@@ -151,7 +152,7 @@ LANG = C
 # environment
 VSCODE_PID = 593
 # variable set hash-table stats:
-# Load=67/1024=7%, Rehash=0, Collisions=1/88=1%
+# Load=68/1024=7%, Rehash=0, Collisions=1/89=1%
 
 # Pattern-specific Variable Values
 
@@ -159,9 +160,9 @@ VSCODE_PID = 593
 
 # Directories
 
-# . (device 16777229, inode 3741208): 19 files, no impossibilities.
+# . (device 16777229, inode 3741208): 20 files, no impossibilities.
 
-# 19 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -233,6 +234,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sat Oct 14 01:08:56 2023
+# Finished Make data base on Sat Oct 14 03:53:12 2023
 
  
