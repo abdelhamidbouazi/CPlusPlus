@@ -6,14 +6,14 @@
 #    By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/18 21:39:25 by abouazi           #+#    #+#              #
-#    Updated: 2023/10/12 15:41:20 by abouazi          ###   ########.fr        #
+#    Updated: 2023/10/14 01:08:50 by abouazi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
-SRC = ./main.cpp ./Span.cpp
-Header = ./Span.hpp
+SRC = ./main.cpp ./BitcoinExchange.cpp
+Header = ./BitcoinExchange.hpp
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f
 
